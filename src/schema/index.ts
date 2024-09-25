@@ -1,4 +1,4 @@
-import {z} from 'zod'
+import {object, z} from 'zod'
 
 export const OrderSchema=z.object({
     name: z.string()
@@ -13,4 +13,10 @@ export const OrderSchema=z.object({
         subtotal:z.number()
     }))
 
+})
+
+export const SearchSchema= z.object({
+    search:z.string()
+            .trim()
+            .min(1,{message:'The field should not be empty'})
 })
