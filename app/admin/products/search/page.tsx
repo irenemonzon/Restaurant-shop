@@ -1,6 +1,5 @@
 import Heading from "@/components/ui/Heading";
 import { prisma } from "@/src/lib/prisma";
-import Link from "next/link";
 import ProductSearchForm from "@/components/products/ProductSearchForm";
 import ProductTable from "@/components/products/ProductsTable";
 

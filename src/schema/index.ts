@@ -1,4 +1,4 @@
-import {object, z} from 'zod'
+import {z} from 'zod'
 
 export const OrderSchema=z.object({
     name: z.string()
@@ -19,4 +19,20 @@ export const SearchSchema= z.object({
     search:z.string()
             .trim()
             .min(1,{message:'The field should not be empty'})
+})
+
+export const ProductSchema = z.object({
+    name: z.string()
+        .trim()
+        .min(1, { message: 'Product name should not be empty'}),
+    price: z.string()
+        .trim()
+        .transform((value) => parseFloat(value)) 
+        .refine((value) => value > 0, { message: 'Price not valid' })
+        .or(z.number().min(1, {message: 'Price is required' })),
+    categoryId: z.string()
+        .trim()
+        .transform((value) => parseInt(value)) 
+        .refine((value) => value > 0, { message: 'Category is required' })
+        .or(z.number().min(1, {message: 'Category is required' })),
 })

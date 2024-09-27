@@ -1,7 +1,18 @@
-const Newpage = () => {
+import AddProductForm from "@/components/products/AddProductForm"
+import ProductForm from "@/components/products/ProductForm"
+import Heading from "@/components/ui/Heading"
+
+const CreateProductPage = () => {
   return (
-    <div>Newpage</div>
+    <>
+      <Heading>
+        New product
+      </Heading>
+      <AddProductForm>
+        <ProductForm/>
+      </AddProductForm>
+    </>
   )
 }
 
-export default Newpage
+export default CreateProductPage 
