@@ -12,12 +12,12 @@ const OrderPage = () => {
   const fetcher=()=>fetch(url).then(res=>res.json()).then(data=>data)
 
   const {data,error,isLoading}= useSWR<OrderWithProducts[]>(url,fetcher,{
-    refreshInterval:60000,
+    refreshInterval:10000,
     revalidateOnFocus:false
 
   })
 
-  if(isLoading) return 'Loading...'
+  if(isLoading) return <p>Loading...</p>
 
   if(data) return (
     <>
