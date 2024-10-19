@@ -4,8 +4,6 @@
 
  Deploy with vercel
 
- 
-
 
 - Link project https://restaurant-shop.vercel.app/
 
