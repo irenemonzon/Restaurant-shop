@@ -55,7 +55,7 @@ Follow these steps to run the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/restaurant-shop.git
+   git clone git@github.com:irenemonzon/Restaurant-shop.git
    cd restaurant-shop
    ```
 
