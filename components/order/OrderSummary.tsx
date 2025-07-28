@@ -53,7 +53,7 @@ const OrderSummary = () => {
 
         ))}
         <p className="text-2xl mt-20 text-center">
-          Total a pagar:{''} 
+          Total:{''} 
           <span className="font-bold">
         {formatCurrency(total)}
           </span>
@@ -72,7 +72,7 @@ const OrderSummary = () => {
           <input
             type="submit"
             className="py-2 rounded uppercase text-white bg-black w-full text-center cursor-pointer font-bold"
-            value='Confirmar Pedido'
+            value='confirm Order'
           />
 
         </form>

@@ -20,7 +20,7 @@ const OrderPage = async({params}:{params:{category:string}}) => {
   return (
     <>
       <Heading>
-        Elige y personaliza tu pedido a continuación
+          Choose and customize your order below.
       </Heading>
       <div 
         className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-4 gap-4 items-start"

@@ -50,7 +50,7 @@ const ImageUpload = ({image}:{image: string | undefined}) => {
                 </div>
                 {image &&  !imageUrl &&(
                     <div className="space-y-2">
-                        <label>Actual Image :</label>
+                        <label>Current Image :</label>
                         <div className="relative w-64 h-64">
                             <Image
                                 fill
