@@ -92,8 +92,16 @@ Follow these steps to run the project locally:
 ## 🌐 Live Demo
 
 - **🏪 [Customer Store](https://restaurant-shop.vercel.app/)** - Browse and order products
+
+![Product Image](./public/home-product.png)
+
 - **👨‍💼 [Admin Panel](https://restaurant-shop.vercel.app/admin/orders)** - Manage orders and products
+
+![Product Image](./public/admin_order.png)
+
 - **📋 [View Orders](https://restaurant-shop.vercel.app/orders)** - Check order status
+
+![Product Image](./public/completed_order.png)
 
 ## 📁 Project Structure
 
